@@ -3,6 +3,12 @@ import Link from 'next/link';
 import { Section } from '@/components/layout/Section';
 import FadeUp from '@/components/ui/FadeUp';
 import { Button } from '@/components/ui/Button';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '転入学・編入学ガイド',
+  description: '通信制高校・サポート校への「転入学（転校）」と「編入学（再入学）」の違いや、失敗しない学校選びの手順を解説。今の学校が合わないと感じたら、無理なくやり直せるステップをチェック。',
+};
 
 export default function GuidePage() {
   return (

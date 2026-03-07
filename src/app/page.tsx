@@ -7,6 +7,13 @@ import { SchoolCard } from '@/components/domain/SchoolCard';
 import schoolsData from '@/data/schools.json';
 import { School } from '@/types/school';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '学校を探す・比較する',
+  description: '全国の通信制高校・サポート校を、エリアや特徴から絞り込んで比較できます。不登校支援・オンライン対応・進学サポートなど、あなたに合う学校をわかりやすく探せます。',
+};
+
 export default function HomePage() {
   const featuredSchools = (schoolsData as School[]).slice(0, 3);
 

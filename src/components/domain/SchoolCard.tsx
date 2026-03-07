@@ -42,10 +42,9 @@ export function SchoolCard({ school }: SchoolCardProps) {
         </div>
 
         <div className="flex flex-wrap gap-2 mb-4">
-          {school.tags.map((tag, idx) => (
+          {school.tags.slice(0, 5).map((tag, idx) => (
             <Tag key={idx} label={tag} variant="default" />
           ))}
-          {school.online && <Tag label="オンライン対応" variant="highlight" />}
         </div>
         
         <p className="text-text-muted text-sm leading-relaxed line-clamp-2 md:line-clamp-3 mb-6 flex-grow">

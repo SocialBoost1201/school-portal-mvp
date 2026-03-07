@@ -39,7 +39,7 @@ export function Footer() {
       
       <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-primary-100/60">
         <p>&copy; {new Date().getFullYear()} 通信制ナビ All Rights Reserved.</p>
-        <p className="mt-2 md:mt-0">※本サイトは先行サンプルデモ環境です</p>
+        <p className="mt-2 md:mt-0">※本ページは掲載イメージを含む先行デモです</p>
       </div>
     </footer>
   );

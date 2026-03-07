@@ -3,6 +3,12 @@ import Link from 'next/link';
 import { Section } from '@/components/layout/Section';
 import FadeUp from '@/components/ui/FadeUp';
 import { Button } from '@/components/ui/Button';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '学校掲載・お申し込み',
+  description: '通信制高校・サポート校の掲載に関する情報。比較検討層の保護者・生徒に、貴校の魅力をわかりやすく届けます。まずはお気軽にご相談ください。',
+};
 
 export default function ForSchoolsPage() {
   return (
@@ -111,11 +117,13 @@ export default function ForSchoolsPage() {
                 ))}
               </ul>
             </div>
-            <div className="w-full md:w-1/2 bg-white p-8 rounded-3xl shadow-card border border-primary-50">
-              <div className="aspect-[4/3] rounded-2xl bg-primary-100 overflow-hidden relative">
-                <div className="absolute inset-0 bg-primary-900/10 flex items-center justify-center">
-                  <span className="text-primary-900/40 font-bold text-lg">Image</span>
-                </div>
+            <div className="w-full md:w-1/2">
+              <div className="overflow-hidden rounded-3xl shadow-card aspect-4/3">
+                <img 
+                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1400&auto=format&fit=crop" 
+                  alt="通信制高校で学ぶ生徒のイメージ"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -133,10 +141,10 @@ export default function ForSchoolsPage() {
             <div className="absolute hidden md:block w-1 bg-primary-50 h-full left-1/2 transform -translate-x-1/2 top-0" />
             
             {[
-              { title: "お問い合わせ・資料請求", desc: "まずは本ページのお問い合わせフォームよりご連絡ください。媒体資料をお送りします。" },
-              { title: "お打ち合わせ・ヒアリング", desc: "オンラインにて、貴校の魅力や特徴、募集の課題などをお伺いします。" },
-              { title: "掲載情報の整理", desc: "お伺いした内容をもとに、保護者・生徒に響く形で情報を整理・ライティングします。" },
-              { title: "掲載開始・効果測定", desc: "ページ公開後は、アクセス状況などを共有しながら、継続的な改善をご提案します。" }
+              { title: "お問い合わせ・ご連絡", desc: "まずは本ページのお問い合わせフォームよりご連絡ください。ご不明な点はメッセージに記載いただければ大丈夫です。" },
+              { title: "オンラインヒアリング", desc: "オンラインにて、貴校の魅力や特徴、募集の課題などをお伺いします。30分〜1時間程度が目安です。" },
+              { title: "掲載情報の整理・ライティング", desc: "お伺いした内容をもとに、保護者・生徒に響く形で学校情報を整理・ライティングします。内容はご確認いただいてから公開します。" },
+              { title: "掲載開始", desc: "内容をご確認いただき、問題がなければ掲載ページを公開します。公開後も修正・追加のご要望にはご対応します。" }
             ].map((step, i) => (
               <div key={i} className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
                 <div className={`w-full md:w-1/2 flex ${i % 2 === 0 ? 'md:justify-end text-left md:text-right' : 'md:justify-start md:order-2 text-left'}`}>
