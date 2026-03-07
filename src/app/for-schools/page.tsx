@@ -12,8 +12,8 @@ export default function ForSchoolsPage() {
         {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/hero.png" 
-            alt="Students on campus" 
+            src="/hero_for_schools.png" 
+            alt="School administrators reviewing data" 
             className="w-full h-full object-cover opacity-30" 
           />
           <div className="absolute inset-0 bg-primary-900/60 mix-blend-multiply" />

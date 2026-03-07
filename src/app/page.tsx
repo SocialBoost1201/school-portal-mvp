@@ -17,7 +17,7 @@ export default function HomePage() {
         {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/hero.png" 
+            src="/hero_top.png" 
             alt="Students on campus" 
             className="w-full h-full object-cover opacity-30" 
           />
