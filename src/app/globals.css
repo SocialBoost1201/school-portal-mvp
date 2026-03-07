@@ -1,26 +1,81 @@
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary-50: #f4f6f8;
+  --color-primary-100: #e3e8ef;
+  --color-primary-500: #3b5998;
+  --color-primary-700: #2c3e50;
+  --color-primary-900: #1a252f;
+
+  --color-accent-100: #e0f2fe;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+
+  --color-bg-base: #fafafa;
+  --color-bg-surface: #ffffff;
+
+  --color-text-main: #1e293b;
+  --color-text-muted: #64748b;
+
+  --font-sans:
+    var(--font-geist-sans), "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  /* Premium Apple-like smooth shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-card-hover: 0 20px 40px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-glow: 0 0 40px rgba(14, 165, 233, 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* Base resets & styles for a premium look */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-bg-base);
+    --foreground: var(--color-text-main);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    line-height: 1.7; /* Relaxed leading for readability */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-primary-900);
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.03em; /* Tighter tracking for premium feel */
+  }
+
+  p {
+    color: var(--color-text-muted);
+  }
+
+  a {
+    transition: all 0.2s ease-in-out;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
