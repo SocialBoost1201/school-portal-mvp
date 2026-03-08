@@ -35,7 +35,7 @@ export default function ForSchoolsPage() {
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
               学校関係者様へ
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-8">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-8">
               通信制高校・サポート校の魅力を、<br className="hidden md:block" />
               保護者・生徒へわかりやすく届けませんか
             </h1>
@@ -48,7 +48,7 @@ export default function ForSchoolsPage() {
                 掲載について相談する
               </Button>
               <Button variant="whiteOutline" size="lg" className="w-full sm:w-auto md:px-12">
-                資料をダウンロード
+                資料請求のご相談
               </Button>
             </div>
           </FadeUp>

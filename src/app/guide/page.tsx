@@ -35,7 +35,7 @@ export default function GuidePage() {
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
               転入学・編入学ガイド
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-8">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-8">
               今の学校が合わないと感じたら。<br className="hidden md:block" />
               無理なくやり直せるステップを。
             </h1>

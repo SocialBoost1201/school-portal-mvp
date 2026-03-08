@@ -35,7 +35,7 @@ export default function HomePage() {
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
               新入学・転入学を考える保護者と生徒のための学校案内サイト
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-8 text-balance">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-8 text-balance">
               通信制高校・サポート校を、<br className="hidden md:block" />
               わかりやすく比較
             </h1>
