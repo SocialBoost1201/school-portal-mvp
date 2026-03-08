@@ -2,15 +2,16 @@
 @config "../../tailwind.config.ts";
 
 @theme {
-  --color-primary-50: #f4f6f8;
-  --color-primary-100: #e3e8ef;
-  --color-primary-500: #3b5998;
-  --color-primary-700: #2c3e50;
-  --color-primary-900: #1a252f;
+  --color-primary-50: #e6f6f5;
+  --color-primary-100: #bce3e2;
+  --color-primary-500: #04b8b3;
+  --color-primary-700: #038a86;
+  --color-primary-900: #03A6A1;
 
-  --color-accent-100: #e0f2fe;
-  --color-accent-500: #0ea5e9;
-  --color-accent-600: #0284c7;
+  --color-accent-100: #FFE3BB;
+  --color-accent-400: #FFA673;
+  --color-accent-500: #FF4F0F;
+  --color-accent-600: #d93d07;
 
   --color-bg-base: #fafafa;
   --color-bg-surface: #ffffff;

@@ -10,24 +10,25 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: '#f4f6f8',
-          100: '#e3e8ef',
-          500: '#3b5998',
-          700: '#2c3e50',
-          900: '#1a252f',
+          50: '#e6f6f5',
+          100: '#bce3e2',
+          500: '#04b8b3',
+          700: '#038a86',
+          900: '#03A6A1',
         },
         accent: {
-          100: '#e0f2fe',
-          500: '#0ea5e9',
-          600: '#0284c7',
+          100: '#FFE3BB',
+          400: '#FFA673',
+          500: '#FF4F0F',
+          600: '#d93d07',
         },
         bg: {
-          base: '#fafafa',
+          base: '#fbfdfd',
           surface: '#ffffff',
         },
         text: {
-          main: '#1e293b',
-          muted: '#64748b',
+          main: '#013130',
+          muted: '#025250',
         }
       },
       spacing: {
