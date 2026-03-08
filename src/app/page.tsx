@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <div className="w-full">
       {/* 1. ファーストビュー (Hero) */}
-      <section className="relative pt-40 pb-32 md:pt-48 md:pb-40 bg-primary-900 overflow-hidden">
+      <section className="relative pt-28 pb-20 md:pt-48 md:pb-40 bg-primary-900 overflow-hidden flex flex-col justify-center min-h-[80vh] md:min-h-0">
         {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -35,11 +35,11 @@ export default function HomePage() {
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
               新入学・転入学を考える保護者と生徒のための学校案内サイト
             </span>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-8 text-balance">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-6 md:mb-8 text-balance">
               通信制高校・サポート校を、<br className="hidden md:block" />
               わかりやすく比較
             </h1>
-            <p className="text-base md:text-lg text-primary-50/90 mb-16 max-w-2xl mx-auto text-balance leading-relaxed">
+            <p className="text-sm md:text-lg text-primary-50/90 mb-10 md:mb-16 max-w-2xl mx-auto text-balance leading-relaxed">
               今の自分にぴったりの学び方を。<br className="hidden sm:block" />全国の学校情報から、あなたに合う学校を安心して探せます。
             </p>
           </FadeUp>
@@ -71,7 +71,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link href="/schools" className="text-sm font-bold text-white/80 hover:text-white underline underline-offset-8 decoration-white/30 hover:decoration-white transition-all">
                 すべての学校を見る
               </Link>

@@ -14,7 +14,7 @@ export default function GuidePage() {
   return (
     <div className="w-full bg-bg-base">
       {/* 1. ファーストビュー */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-primary-900 overflow-hidden text-center">
+      <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 bg-primary-900 overflow-hidden text-center flex flex-col justify-center min-h-[60vh] md:min-h-0">
         {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -35,11 +35,11 @@ export default function GuidePage() {
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
               転入学・編入学ガイド
             </span>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-8">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-6 md:mb-8">
               今の学校が合わないと感じたら。<br className="hidden md:block" />
               無理なくやり直せるステップを。
             </h1>
-            <p className="text-base md:text-lg text-primary-50/90 mb-10 text-balance leading-relaxed">
+            <p className="text-sm md:text-lg text-primary-50/90 mb-10 text-balance leading-relaxed">
               通信制高校・サポート校への「転入学（転校）」と「編入学（再入学）」。<br className="hidden md:block" />
               それぞれの違いや、失敗しない学校選びの手順をわかりやすく解説します。
             </p>

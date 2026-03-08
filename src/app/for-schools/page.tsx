@@ -14,7 +14,7 @@ export default function ForSchoolsPage() {
   return (
     <div className="w-full bg-white">
       {/* 1. ファーストビュー */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-primary-900 overflow-hidden text-center">
+      <section className="relative pt-28 pb-20 md:pt-40 md:pb-32 bg-primary-900 overflow-hidden text-center flex flex-col justify-center min-h-[70vh] md:min-h-0">
         {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -35,11 +35,11 @@ export default function ForSchoolsPage() {
             <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
               学校関係者様へ
             </span>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-8">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-6 md:mb-8">
               通信制高校・サポート校の魅力を、<br className="hidden md:block" />
               保護者・生徒へわかりやすく届けませんか
             </h1>
-            <p className="text-base md:text-lg text-primary-50/90 mb-10 text-balance leading-relaxed">
+            <p className="text-sm md:text-lg text-primary-50/90 mb-10 text-balance leading-relaxed">
               「通信制ナビ」は、新しい学び方を探す生徒と、多様な教育を提供する学校をつなぐ、<br className="hidden md:block" />
               次世代の学校ポータルサイトです。
             </p>
