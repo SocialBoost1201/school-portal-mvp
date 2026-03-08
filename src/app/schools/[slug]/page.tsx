@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -14,6 +15,22 @@ export function generateStaticParams() {
   return schoolsData.map((school) => ({
     slug: school.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const school = (schoolsData as School[]).find((s) => s.slug === resolvedParams.slug);
+  
+  if (!school) {
+    return {
+      title: '学校が見つかりません',
+    };
+  }
+
+  return {
+    title: `${school.name} | 通信制ナビ`,
+    description: school.description,
+  };
 }
 
 export default async function SchoolDetailPage({
