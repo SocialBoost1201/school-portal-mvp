@@ -5,9 +5,9 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2 group">
           {/* text-logo */}
-          <span className="text-xl font-bold tracking-tight text-primary-900">
+          <span className="text-xl font-bold tracking-tight text-accent-600 group-hover:text-accent-500 transition-colors">
             通信制ナビ
           </span>
         </Link>

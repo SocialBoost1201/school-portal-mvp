@@ -36,7 +36,7 @@ export default function HomePage() {
               新入学・転入学を考える保護者と生徒のための学校案内サイト
             </span>
             <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-6 md:mb-8 text-balance">
-              通信制高校・サポート校を、<br className="hidden md:block" />
+              通信制高校・サポート校<br className="md:hidden" />を、<br className="hidden md:block" />
               わかりやすく比較
             </h1>
             <p className="text-sm md:text-lg text-primary-50/90 mb-10 md:mb-16 max-w-2xl mx-auto text-balance leading-relaxed">
@@ -46,37 +46,36 @@ export default function HomePage() {
 
           {/* 検索UI (Mock) */}
           <FadeUp delay={0.2} yOffset={30} duration={0.8}>
-            <div className="w-full max-w-3xl border border-primary-100 bg-white/80 backdrop-blur-md rounded-2xl p-4 md:p-6 shadow-card flex flex-col md:flex-row gap-4">
+            <div className="w-full max-w-sm md:max-w-3xl border border-accent-100 bg-accent-50/90 backdrop-blur-md rounded-[2rem] p-6 md:p-6 shadow-xl flex flex-col md:flex-row gap-4">
               <div className="flex-1 flex flex-col text-left">
-                <label className="text-xs font-bold text-primary-900 mb-1 pl-1">エリア</label>
-                <select className="w-full bg-primary-50 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-accent-500 outline-none text-text-main appearance-none">
+                <label className="text-xs font-bold text-accent-600 mb-1.5 pl-1">エリア</label>
+                <select className="w-full bg-white border-none rounded-2xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-500 outline-none text-text-main appearance-none shadow-sm">
                   <option>全国から探す</option>
                   <option>関東</option>
                   <option>関西</option>
                 </select>
               </div>
               <div className="flex-1 flex flex-col text-left">
-                <label className="text-xs font-bold text-primary-900 mb-1 pl-1">キーワード</label>
+                <label className="text-xs font-bold text-accent-600 mb-1.5 pl-1">キーワード</label>
                 <input 
                   type="text" 
                   placeholder="学校名・特徴など" 
-                  className="w-full bg-primary-50 border-none rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-accent-500 outline-none text-text-main"
+                  className="w-full bg-white border-none rounded-2xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-500 outline-none text-text-main shadow-sm"
                 />
               </div>
               <div className="flex items-end md:w-auto w-full mt-2 md:mt-0">
                 <Link href="/schools" className="w-full">
-                  <Button variant="primary" fullWidth className="h-[46px]">
+                  <Button variant="primary" fullWidth className="h-[52px] rounded-2xl text-base font-bold">
                     学校を探す
                   </Button>
                 </Link>
               </div>
             </div>
-            <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link href="/schools" className="text-sm font-bold text-white/80 hover:text-white underline underline-offset-8 decoration-white/30 hover:decoration-white transition-all">
+            <div className="mt-10 md:mt-12 flex flex-col gap-6 justify-center items-center">
+              <Link href="/schools" className="text-base font-bold text-white hover:text-white border-b-2 border-white/30 hover:border-white transition-all pb-1">
                 すべての学校を見る
               </Link>
-              <span className="hidden sm:block text-white/20">|</span>
-              <Link href="/for-schools" className="text-sm font-bold text-accent-100 hover:text-white underline underline-offset-8 decoration-accent-500/50 hover:decoration-accent-500 transition-all">
+              <Link href="/for-schools" className="text-base font-bold text-accent-100 hover:text-white border-b-2 border-accent-500/50 hover:border-accent-500 transition-all pb-1">
                 学校掲載のご相談
               </Link>
             </div>
