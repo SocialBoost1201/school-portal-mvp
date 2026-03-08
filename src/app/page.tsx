@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <div className="w-full">
       {/* 1. ファーストビュー (Hero) */}
-      <section className="relative pt-28 pb-20 md:pt-48 md:pb-40 bg-primary-900 overflow-hidden flex flex-col justify-center min-h-[80vh] md:min-h-0">
+      <section className="relative pt-20 pb-10 md:pt-48 md:pb-40 bg-primary-900 overflow-hidden flex flex-col justify-center">
         {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -32,21 +32,21 @@ export default function HomePage() {
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center text-center">
           <FadeUp yOffset={30} duration={0.8}>
-            <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-6">
+            <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white text-sm font-bold tracking-wide mb-3 md:mb-6">
               新入学・転入学を考える保護者と生徒のための学校案内サイト
             </span>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-6 md:mb-8 text-balance">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-3 md:mb-8 text-balance">
               通信制高校・サポート校<br className="md:hidden" />を、<br className="hidden md:block" />
               わかりやすく比較
             </h1>
-            <p className="text-sm md:text-lg text-primary-50/90 mb-10 md:mb-16 max-w-2xl mx-auto text-balance leading-relaxed">
+            <p className="text-sm md:text-lg text-primary-50/90 mb-6 md:mb-16 max-w-2xl mx-auto text-balance leading-relaxed">
               今の自分にぴったりの学び方を。<br className="hidden sm:block" />全国の学校情報から、あなたに合う学校を安心して探せます。
             </p>
           </FadeUp>
 
           {/* 検索UI (Mock) */}
           <FadeUp delay={0.2} yOffset={30} duration={0.8}>
-            <div className="w-full max-w-sm md:max-w-3xl border border-accent-100 bg-accent-50/90 backdrop-blur-md rounded-[2rem] p-6 md:p-6 shadow-xl flex flex-col md:flex-row gap-4">
+            <div className="w-full max-w-sm md:max-w-3xl border border-accent-100 bg-accent-50/90 backdrop-blur-md rounded-[2rem] p-4 md:p-6 shadow-xl flex flex-col md:flex-row gap-3 md:gap-4">
               <div className="flex-1 flex flex-col text-left">
                 <label className="text-xs font-bold text-accent-600 mb-1.5 pl-1">エリア</label>
                 <select className="w-full bg-white border-none rounded-2xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-500 outline-none text-text-main appearance-none shadow-sm">
@@ -71,11 +71,11 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="mt-10 md:mt-12 flex flex-col gap-6 justify-center items-center">
+            <div className="mt-6 md:mt-12 flex flex-col gap-4 md:gap-6 justify-center items-center">
               <Link href="/schools" className="text-base font-bold text-white hover:text-white border-b-2 border-white/30 hover:border-white transition-all pb-1">
                 すべての学校を見る
               </Link>
-              <Link href="/for-schools" className="text-base font-bold text-accent-100 hover:text-white border-b-2 border-accent-500/50 hover:border-accent-500 transition-all pb-1">
+              <Link href="/for-schools" className="text-base font-bold text-accent-300 hover:text-white border-b-2 border-accent-500/50 hover:border-accent-500 transition-all pb-1">
                 学校掲載のご相談
               </Link>
             </div>
