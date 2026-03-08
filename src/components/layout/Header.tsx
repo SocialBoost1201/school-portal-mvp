@@ -7,7 +7,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           {/* text-logo */}
-          <span className="text-xl font-bold tracking-tight text-accent-600 group-hover:text-accent-500 transition-colors">
+          <span className="text-xl font-bold tracking-tight text-white group-hover:text-white/80 transition-colors">
             通信制ナビ
           </span>
         </Link>

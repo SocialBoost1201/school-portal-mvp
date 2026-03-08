@@ -48,7 +48,7 @@ export default function HomePage() {
           <FadeUp delay={0.2} yOffset={30} duration={0.8}>
             <div className="w-full max-w-sm md:max-w-3xl border border-accent-100 bg-accent-50/90 backdrop-blur-md rounded-[2rem] p-4 md:p-6 shadow-xl flex flex-col md:flex-row gap-3 md:gap-4">
               <div className="flex-1 flex flex-col text-left">
-                <label className="text-xs font-bold text-accent-600 mb-1.5 pl-1">エリア</label>
+                <label className="text-xs font-bold text-white mb-1.5 pl-1">エリア</label>
                 <select className="w-full bg-white border-none rounded-2xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-accent-500 outline-none text-text-main appearance-none shadow-sm">
                   <option>全国から探す</option>
                   <option>関東</option>
@@ -56,7 +56,7 @@ export default function HomePage() {
                 </select>
               </div>
               <div className="flex-1 flex flex-col text-left">
-                <label className="text-xs font-bold text-accent-600 mb-1.5 pl-1">キーワード</label>
+                <label className="text-xs font-bold text-white mb-1.5 pl-1">キーワード</label>
                 <input 
                   type="text" 
                   placeholder="学校名・特徴など" 
@@ -75,7 +75,7 @@ export default function HomePage() {
               <Link href="/schools" className="text-base font-bold text-white hover:text-white border-b-2 border-white/30 hover:border-white transition-all pb-1">
                 すべての学校を見る
               </Link>
-              <Link href="/for-schools" className="text-base font-bold text-accent-300 hover:text-white border-b-2 border-accent-500/50 hover:border-accent-500 transition-all pb-1">
+              <Link href="/for-schools" className="text-base font-bold text-white hover:text-white border-b-2 border-white/50 hover:border-white transition-all pb-1">
                 学校掲載のご相談
               </Link>
             </div>
